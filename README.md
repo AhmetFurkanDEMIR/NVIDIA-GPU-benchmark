@@ -2,11 +2,11 @@
 
 ![o-que-e-gpu-placa-de-video](https://user-images.githubusercontent.com/54184905/98593593-6b1eca80-22e4-11eb-9a63-72695182f09e.jpg)
 
-**Graphics processor unit :** The graphics processor unit, or GPU for short, is the device used for graphic creation in personal computers, workstations or game consoles. Modern GPUs are extremely efficient at rendering and displaying computer graphics, and their high parallel structures make it more efficient than CPU for complex algorithms. The GPU can be just above the graphics card or integrated into the motherboard.
-
 Hello, I have prepared two speed tests for you on NVIDIA GPUs that I have access to.
 
 **WARNING :** Instead of evaluating these GPUs alone, I recommend you to examine them with all their hardware, these GPUs may give different results in different applications or tests at different times.
+
+**Graphics processor unit :** The graphics processor unit, or GPU for short, is the device used for graphic creation in personal computers, workstations or game consoles. Modern GPUs are extremely efficient at rendering and displaying computer graphics, and their high parallel structures make it more efficient than CPU for complex algorithms. The GPU can be just above the graphics card or integrated into the motherboard.
 
 * 1 . Speed test : I created four matrices with 10000 rows and 10000 columns on the GPU. First I multiply matrix a and b and assign it to variable y, then I multiply matrix c and d and assign it to variable z, and finally I multiply matrix y and z and assign it to variable x, and I did this operation 1000 times in total.
 
