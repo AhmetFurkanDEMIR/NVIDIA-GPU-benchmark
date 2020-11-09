@@ -89,13 +89,13 @@ int main()
 
 There are a total of 4 GPU bananas belonging to the Tesla series, let's examine them in order.
 
-* 1-) 4 X NVIDIA Tesla V100 GPU
+* 1-) [4 X NVIDIA Tesla V100 GPU](/4XTesla_V100.ipynb)
 
-* 2-) NVIDIA Tesla P4 GPU
+* 2-) [NVIDIA Tesla P4 GPU](Tesla_P4.ipynb)
 
-* 3-) NVIDIA Tesla P100 GPU
+* 3-) [NVIDIA Tesla P100 GPU](Tesla_P100.ipynb)
 
-* 4-) NVIDIA Tesla T4 GPU
+* 4-) [NVIDIA Tesla T4 GPU](Tesla_T4.ipynb)
 
 
 #### 4 X NVIDIA Tesla V100 GPU
@@ -242,7 +242,7 @@ int main()
 ```
 
 
-#### Test-2a, Performance of GPUs, in seconds
+#### Test-2a, Performance of GPUs, in seconds :
 
 **Test 2-a, let's first see which GPU will compile the Cuda file named matrixmul.cu. The files are compiled with nvcc (Cuda compiler).**
 
@@ -267,9 +267,9 @@ print("2.test-a result (second) : " + str(son-bas))
 ![tst2](https://user-images.githubusercontent.com/54184905/98590406-d2864b80-22df-11eb-9947-b4d40876ad23.png)
 
 
-#### Test-2b, Performance of GPUs, in seconds
+#### Test-2b, Performance of GPUs, in seconds :
 
-**Test 2-a, which GPU will be able to finish running the compiled file first.**
+**Test 2-b, which GPU will be able to finish running the compiled file first.**
 
 ```python
 # run the compiled file, test
@@ -277,7 +277,7 @@ bas = time.time()
 !./a.out
 son = time.time()
 
-print("2.test-a result (second) : " + str(son-bas))
+print("2.test-b result (second) : " + str(son-bas))
 ```
 
 * **1-) 4 X NVIDIA Tesla V100 GPU : 9.453376293182373 (Second).**
