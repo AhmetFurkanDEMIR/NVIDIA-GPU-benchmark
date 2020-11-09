@@ -1,5 +1,7 @@
 # NVIDIA GPU benchmark
 
+![o-que-e-gpu-placa-de-video](https://user-images.githubusercontent.com/54184905/98593593-6b1eca80-22e4-11eb-9a63-72695182f09e.jpg)
+
 Hello, I have prepared two speed tests for you on NVIDIA GPUs that I have access to.
 
 **WARNING :** Instead of evaluating these GPUs alone, I recommend you to examine them with all their hardware, these GPUs may give different results in different applications or tests at different times.
