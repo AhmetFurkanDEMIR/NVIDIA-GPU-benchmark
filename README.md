@@ -2,13 +2,13 @@
 
 ![o-que-e-gpu-placa-de-video](https://user-images.githubusercontent.com/54184905/98593593-6b1eca80-22e4-11eb-9a63-72695182f09e.jpg)
 
-Hello, I have prepared two speed tests for you on NVIDIA GPUs that I have access to.
+Hello, I have prepared two speed tests for you on NVIDIA GPUs that I have access to. GPUs have been accessed via Google Colab and AWS.
 
 **WARNING :** Instead of evaluating these GPUs alone, I recommend you to examine them with all their hardware, these GPUs may give different results in different applications or tests at different times.
 
 **Graphics processor unit :** The graphics processor unit, or GPU for short, is the device used for graphic creation in personal computers, workstations or game consoles. Modern GPUs are extremely efficient at rendering and displaying computer graphics, and their high parallel structures make it more efficient than CPU for complex algorithms. The GPU can be just above the graphics card or integrated into the motherboard.
 
-* 1 . Speed test : I created four matrices with 10000 rows and 10000 columns on the GPU. First I multiply matrix a and b and assign it to variable y, then I multiply matrix c and d and assign it to variable z, and finally I multiply matrix y and z and assign it to variable x, and I did this operation 1000 times in total.
+**1 . Speed test :** I created four matrices with 10000 rows and 10000 columns on the GPU. First I multiply matrix a and b and assign it to variable y, then I multiply matrix c and d and assign it to variable z, and finally I multiply matrix y and z and assign it to variable x, and I did this operation 1000 times in total.
 
 ```python
 import time, torch
@@ -32,7 +32,9 @@ son = time.time()
 print("1.test result (second) : " + str(son-bas))
 ```
 
-* 2 . Speed test : With C ++, I manually allocated two places in the GPU memory (10000 rows and 10000 columns) and assigned values to these reserved areas with loops. Then I multiplied these matrices with each other.
+**2 . Speed test :** With C ++, I manually allocated two places in the GPU memory (10000 rows and 10000 columns) and assigned values to these reserved areas with loops. Then I multiplied these matrices with each other.
+
+You can access the cuda, c and header files written for Test 2 from these links. Links: https://ahmetfurkandemir.s3.amazonaws.com/kernel.cu (kernel.cu), https://ahmetfurkandemir.s3.amazonaws.com/dev_array.h (dev_array.h), https://ahmetfurkandemir.s3.amazonaws.com/kernel.h (kernel.h), https://ahmetfurkandemir.s3.amazonaws.com/matrixmul.cu (matrixmul.c).
 
 ```c
 #include <iostream>
@@ -307,4 +309,3 @@ print("2.test-b result (second) : " + str(son-bas))
 
 * **WARNING :** Instead of evaluating these GPUs alone, I recommend you to examine them with all their hardware, these GPUs may give different results in different applications or tests at different times.
 
-* GPUs have been accessed via Google Colab and AWS.
